@@ -26,8 +26,7 @@ function App() {
             };
             
             try {
-              window.androidObj = function AndroidClass(){};
-              window.androidObj.textToAndroid("anant");
+              "interface.callFromJS()"
               console.log("lawl");
             } catch (e) {
               console.log(e)
