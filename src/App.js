@@ -24,8 +24,9 @@ function App() {
             let message = {
               test: "test"
             };
-            window.androidObj = function AndroidClass(){};
+            
             try {
+              window.androidObj = function AndroidClass(){};
               window.androidObj.textToAndroid("anant");
               console.log("lawl");
             } catch (e) {
