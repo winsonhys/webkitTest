@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'semantic-ui-react'
 
 function App() {
   return (
@@ -18,6 +19,21 @@ function App() {
         >
           Learn React
         </a>
+        <Button
+          onClick={() => {
+            let message = {
+              test: "test"
+            };
+            try {
+              window.webkit.messageHandlers.test.postMessage(
+                message
+              );
+              console.log("lawl");
+            } catch (e) {
+              console.log(e)
+            }
+          }}
+        >Click this to trigger event</Button>
       </header>
     </div>
   );
