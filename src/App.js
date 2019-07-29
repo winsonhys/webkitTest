@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'semantic-ui-react'
+window.androidObj = function AndroidClass(){};
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               window.webkit.messageHandlers.test.postMessage(
                 message
               );
+              window.androidObj.textToAndroid("anant");
               console.log("lawl");
             } catch (e) {
               console.log(e)
