@@ -47,6 +47,19 @@ class App extends React.Component {
           >
             Click this to trigger event
           </Button>
+
+          <Button
+            onClick={() => {
+              try {
+                window.androidObj.navToAndroid("YEET");
+                console.log("lawl");
+              } catch (e) {
+                console.log(e);
+              }
+            }}
+          >
+            Click this to nav back
+          </Button>
         </header>
       </div>
     );
