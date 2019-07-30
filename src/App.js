@@ -32,8 +32,7 @@ class App extends React.Component {
               };
 
               try {
-                // window.androidObj.textToAndroid({"test": "test"});
-                javascript_obj.textFromWeb(message)
+                window.androidObj.textToAndroid(message);
                 console.log("lawl");
               } catch (e) {
                 console.log(e);
