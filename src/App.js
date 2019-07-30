@@ -32,7 +32,7 @@ class App extends React.Component {
               };
 
               try {
-                window.androidObj.textToAndroid(message);
+                window.androidObj.textToAndroid(JSON.stringify(message));
                 console.log("lawl");
               } catch (e) {
                 console.log(e);
