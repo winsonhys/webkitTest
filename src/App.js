@@ -50,7 +50,7 @@ class App extends React.Component {
           <Button
             onClick={() => {
               try {
-                window.androidObj.textToAndroid("YEET");
+                window.androidObj.navToAndroid("YEET");
                 console.log("lawl");
               } catch (e) {
                 console.log(e);
